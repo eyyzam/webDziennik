@@ -1,4 +1,4 @@
-import { IErrorModel, CommunicationState } from "../";
+import { IErrorModel, CommunicationState } from "../../models";
 
 export interface IBaseObservableModel<T> {
 	error: IErrorModel;
