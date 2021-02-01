@@ -1,5 +1,6 @@
 // Enums
 export * from "./enums/CommunicationState";
+export * from "./enums/LanguageKind";
 
 // Implementations
 export * from "./implementations/BaseObservableModel";

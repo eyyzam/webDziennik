@@ -6,3 +6,4 @@ export * from "./common/observable/BaseSubjectObservable.service";
 
 // Regular services
 export * from "./common/regular/HttpMapper.service";
+export * from "./common/regular/AppTranslate.service";

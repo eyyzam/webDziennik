@@ -1,5 +1,5 @@
 export enum CommunicationState {
-	NONE,
-	LOADING,
-	LOADED
+	NONE = "NONE",
+	LOADING = "LOADING",
+	LOADED = "LOADED"
 }
