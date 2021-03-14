@@ -3,12 +3,12 @@
 	"version": 1,
 	"newProjectRoot": "projects",
 	"projects": {
-		"WebDziennik": {
+		"TankStats": {
 			"architect": {
 				"build": {
 					"builder": "@angular-devkit/build-angular:browser",
 					"options": {
-						"outputPath": "dist/WebDziennik",
+						"outputPath": "dist/TankStats",
 						"index": "src/index.html",
 						"main": "src/main.ts",
 						"polyfills": "src/polyfills.ts",
@@ -21,7 +21,10 @@
 						"styles": [
 							"src/styles.less"
 						],
-						"scripts": []
+						"scripts": [],
+						"allowedCommonJsDependencies": [
+							"lodash"
+						]
 					},
 					"configurations": {
 						"production": {
@@ -56,18 +59,18 @@
 				"serve": {
 					"builder": "@angular-devkit/build-angular:dev-server",
 					"options": {
-						"browserTarget": "WebDziennik:build"
+						"browserTarget": "TankStats:build"
 					},
 					"configurations": {
 						"production": {
-							"browserTarget": "WebDziennik:build:production"
+							"browserTarget": "TankStats:build:production"
 						}
 					}
 				},
 				"extract-i18n": {
 					"builder": "@angular-devkit/build-angular:extract-i18n",
 					"options": {
-						"browserTarget": "WebDziennik:build"
+						"browserTarget": "TankStats:build"
 					}
 				},
 				"lint": {
@@ -97,5 +100,5 @@
 			"sourceRoot": "src"
 		}
 	},
-	"defaultProject": "WebDziennik"
+	"defaultProject": "TankStats"
 }

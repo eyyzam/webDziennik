@@ -1,5 +1,6 @@
 import { Subject } from "rxjs";
-import { BaseObservableService, HttpMapperService } from "../../../services";
+import { BaseObservableService } from "./BaseObservable.service";
+import { HttpMapperService } from "../regular/HttpMapper.service";
 
 export abstract class BaseSubjectObservableService<T> extends BaseObservableService<T> {
 
