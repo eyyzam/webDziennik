@@ -11,8 +11,10 @@ import { TranslateModule, TranslateLoader } from "@ngx-translate/core";
 import { registerLocaleData } from "@angular/common";
 import localeEn from "@angular/common/locales/en";
 import { LayoutComponent } from "./layout/layout.component";
-import { StatisticsComponent } from './pages/statistics/statistics.component';
-import { HomeComponent } from './pages/home/home.component';
+import { StatisticsComponent } from "./pages/statistics/statistics.component";
+import { HomeComponent } from "./pages/home/home.component";
+import { SidenavComponent } from "./layout/sidenav/sidenav.component";
+import { MaterialModule } from "./core/material/material.module";
 
 registerLocaleData(localeEn, "en");
 
@@ -25,7 +27,8 @@ export function HttpLoaderFactory(http: HttpClient) {
 		AppComponent,
 		LayoutComponent,
 		StatisticsComponent,
-		HomeComponent
+		HomeComponent,
+		SidenavComponent
 	],
 	imports: [
 		BrowserModule,
@@ -39,7 +42,8 @@ export function HttpLoaderFactory(http: HttpClient) {
 				useFactory: HttpLoaderFactory,
 				deps: [HttpClient]
 			}
-		})
+		}),
+		MaterialModule
 	],
 	providers: [
 		{ provide: LOCALE_ID, useValue: "pl" }
