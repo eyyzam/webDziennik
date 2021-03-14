@@ -10,6 +10,9 @@ import { TranslateHttpLoader } from "@ngx-translate/http-loader";
 import { TranslateModule, TranslateLoader } from "@ngx-translate/core";
 import { registerLocaleData } from "@angular/common";
 import localeEn from "@angular/common/locales/en";
+import { LayoutComponent } from "./layout/layout.component";
+import { StatisticsComponent } from './pages/statistics/statistics.component';
+import { HomeComponent } from './pages/home/home.component';
 
 registerLocaleData(localeEn, "en");
 
@@ -19,7 +22,10 @@ export function HttpLoaderFactory(http: HttpClient) {
 
 @NgModule({
 	declarations: [
-		AppComponent
+		AppComponent,
+		LayoutComponent,
+		StatisticsComponent,
+		HomeComponent
 	],
 	imports: [
 		BrowserModule,
