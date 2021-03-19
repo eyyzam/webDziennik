@@ -6,7 +6,8 @@ import { LayoutRoutingModule } from "./layout-routing.module";
 	imports: [
 		CommonModule,
 		LayoutRoutingModule
-	]
+	],
+	declarations: []
 })
 
 export class LayoutModule { }

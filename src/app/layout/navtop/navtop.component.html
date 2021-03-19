@@ -1,0 +1,10 @@
+<mat-toolbar>
+	<mat-toolbar-row>
+		<button mat-icon-button class="navtop-icon-button" (click)="toggleSidenav()">
+			<mat-icon>menu</mat-icon>
+		</button>
+		<span class="navtop-logo-wrapper" *ngIf="!sidenavOpened">
+			<img class="logo" src="../../../assets/logo.png" alt="" />
+		</span>
+	</mat-toolbar-row>
+</mat-toolbar>

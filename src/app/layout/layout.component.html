@@ -1,10 +1,11 @@
 <div class="layout-container">
 	<ng-container>
 		<mat-sidenav-container>
-			<mat-sidenav class="sidenav" mode="side" opened [fixedInViewport]="true" #sidenav>
+			<mat-sidenav class="sidenav" mode="side" [opened]="sidenavOpened" [fixedInViewport]="true" #sidenav>
 				<app-sidenav></app-sidenav>
 			</mat-sidenav>
 			<mat-sidenav-content>
+				<app-navtop></app-navtop>
 				<router-outlet></router-outlet>
 			</mat-sidenav-content>
 		</mat-sidenav-container>

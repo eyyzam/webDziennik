@@ -14,6 +14,7 @@ import { LayoutComponent } from "./layout/layout.component";
 import { StatisticsComponent } from "./pages/statistics/statistics.component";
 import { HomeComponent } from "./pages/home/home.component";
 import { SidenavComponent } from "./layout/sidenav/sidenav.component";
+import { NavtopComponent } from "./layout/navtop/navtop.component";
 import { MaterialModule } from "./core/material/material.module";
 
 registerLocaleData(localeEn, "en");
@@ -28,7 +29,8 @@ export function HttpLoaderFactory(http: HttpClient) {
 		LayoutComponent,
 		StatisticsComponent,
 		HomeComponent,
-		SidenavComponent
+		SidenavComponent,
+		NavtopComponent
 	],
 	imports: [
 		BrowserModule,
