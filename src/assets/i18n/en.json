@@ -6,5 +6,9 @@
 		"camo_values_calculator": "Camo Values Calculator",
 		"tutorials": "Tutorials",
 		"about": "About"
-	}
+	},
+	"languages": {
+		"english":  "English", 
+		"polish": "Polski"
+	} 
 }
