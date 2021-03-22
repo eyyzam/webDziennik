@@ -1,3 +1,10 @@
 {
-
+	"sidebar": {
+		"player_statistics": "Player Statistics",
+		"clan_statistics": "Clan Statistics",
+		"compare_tanks": "Compare Tanks",
+		"camo_values_calculator": "Camo Values Calculator",
+		"tutorials": "Tutorials",
+		"about": "About"
+	}
 }

@@ -1,3 +1,10 @@
 {
-
+	"sidebar": {
+		"player_statistics": "Statystyki Gracza",
+		"clan_statistics": "Statystyki Klanu",
+		"compare_tanks": "Porównywarka Czołgów",
+		"camo_values_calculator": "Kalkulator Kamuflażu",
+		"tutorials": "Poradniki",
+		"about":  "Informacje o stronie" 
+	} 
 }
