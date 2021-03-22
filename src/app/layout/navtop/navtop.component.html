@@ -6,5 +6,11 @@
 		<span class="navtop-logo-wrapper" *ngIf="!sidenavOpened">
 			<img class="logo" src="../../../assets/logo.png" alt="" />
 		</span>
+		<span class="spacer"></span>
+		<span class="navtop-languages-wrapper">
+			<span class="select-language" *ngFor="let lang of languages" (click)="changeLanguage(lang)">
+				<img src="../../../assets/{{lang}}.png" alt="" />
+			</span>
+		</span>
 	</mat-toolbar-row>
 </mat-toolbar>

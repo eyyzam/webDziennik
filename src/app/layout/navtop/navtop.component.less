@@ -1,5 +1,6 @@
 mat-toolbar {
 	background-color: var(--main-color);
+	overflow: hidden;
 
 	.mat-toolbar-row {
 		height: 48px;
@@ -17,6 +18,24 @@ mat-toolbar {
 
 			.logo {
 				height: 80%;
+			}
+		}
+
+		.spacer {
+			flex: 1 1 auto;
+		}
+
+		.navtop-languages-wrapper {
+
+			.select-language {
+
+				&:not(:first-of-type) {
+					margin-left: 8px;
+				}
+
+				img {
+					vertical-align: middle;
+				}
 			}
 		}
 	}
